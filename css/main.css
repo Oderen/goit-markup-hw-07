@@ -678,7 +678,7 @@ summary {
   padding-bottom: 0px;
 }
 
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
@@ -688,18 +688,18 @@ summary {
   color: #212121;
 }
 
-.list-team-images {
-  padding-top: 50px;
-  padding-bottom: 107px;
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 107px;
 }
 
-.list-team-images .item {
+.team__item {
   width: calc((100% - 30px) / 2);
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -707,15 +707,15 @@ summary {
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-team-images > .item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.images-team {
+.team__image {
   border-radius: 0px;
 }
 
-.worker {
+.team__worker {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
@@ -725,7 +725,7 @@ summary {
   margin-top: 30px;
 }
 
-.position {
+.team__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1875;
@@ -736,7 +736,7 @@ summary {
   margin-bottom: 30px;
 }
 
-.social-list {
+.team-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,11 +751,11 @@ summary {
   padding-bottom: 30px;
 }
 
-.social-list > .social-item + .social-item {
+.team-social__item + .team-social__item {
   margin-left: 10px;
 }
 
-.social-link {
+.team-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,19 +773,18 @@ summary {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-link:hover {
+.team-social__link:hover {
   background-color: red;
 }
 
-.icon {
+.team-social__icon {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon:hover, .icon:focus {
+.team-social__icon:hover {
   fill: #ffffff;
 }
 
@@ -804,7 +803,7 @@ summary {
   padding-bottom: 94px;
 }
 
-.permanent-clients-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -814,7 +813,7 @@ summary {
   padding-top: 82px;
 }
 
-.clients-list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,7 +823,7 @@ summary {
           justify-content: center;
 }
 
-.clients-link {
+.clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,22 +841,22 @@ summary {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid rgb(33, 150, 243);
 }
 
-.icon-clients {
+.clients__icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-clients:hover, .icon-clients:focus {
+.clients__icon:hover, .clients__icon:focus {
   fill: red;
 }
 
-.clients-list > .item-clients + .item-clients {
+.clients__item + .clients__item {
   margin-left: 30px;
 }
 
@@ -877,7 +876,7 @@ summary {
           justify-content: space-between;
 }
 
-.logo-footer {
+.logo-footer__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,7 +902,7 @@ summary {
   color: #ffffff;
 }
 
-.address {
+.address__link {
   font-weight: 400;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
@@ -911,25 +910,25 @@ summary {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address:hover, .address:focus {
+.address__link:hover, .address__link:focus {
   color: red;
 }
 
-.address-content {
+.address {
   margin-top: 20px;
 }
 
-.footer-mail {
+.address__mail {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
 }
 
-.footer-tel {
+.address__tel {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
 }
 
-.block-join {
+.join {
   width: 206px;
   height: 80px;
   padding-top: 12px;
@@ -937,7 +936,7 @@ summary {
   padding-bottom: 40px;
 }
 
-.title-join {
+.join__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -946,7 +945,7 @@ summary {
   color: #ffffff;
 }
 
-.list-join {
+.join__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -954,11 +953,11 @@ summary {
   margin-top: 20px;
 }
 
-.list-join > .item-join + .item-join {
+.join__item + .join__item {
   margin-left: 10px;
 }
 
-.link-join {
+.join__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,16 +975,16 @@ summary {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-join:hover, .link-join:focus {
+.join__link:hover, .join__link:focus {
   background-color: red;
 }
 
-.icon-join {
+.join__icon {
   fill: #ffffff;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-join:hover, .icon-join:focus {
+.join__icon:hover, .join__icon:focus {
   fill: #ffffff;
 }
 
@@ -996,7 +995,7 @@ summary {
   padding-bottom: 23px;
 }
 
-.subscribe-title {
+.subscribe__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1006,13 +1005,13 @@ summary {
   margin-bottom: 20px;
 }
 
-.subscribe-inner-container {
+.inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.form-footer input {
+.form-footer__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -1024,7 +1023,7 @@ summary {
   border-radius: 4px;
 }
 
-.form-footer input::-webkit-input-placeholder {
+.form-footer__input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1032,7 +1031,7 @@ summary {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer input::-moz-placeholder {
+.form-footer__input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1040,7 +1039,7 @@ summary {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer input:-ms-input-placeholder {
+.form-footer__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1048,7 +1047,7 @@ summary {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer input::-ms-input-placeholder {
+.form-footer__input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1056,7 +1055,7 @@ summary {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer input::placeholder {
+.form-footer__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1084,7 +1083,7 @@ summary {
   cursor: pointer;
 }
 
-.subscribe-button-text {
+.subscribe-button__text {
   margin-right: 10px;
   font-weight: 700;
   font-size: 16px;
@@ -1093,7 +1092,7 @@ summary {
   color: #ffffff;
 }
 
-.subscribe-svg {
+.subscribe-button__svg {
   width: 24px;
   height: 24px;
 }
@@ -1140,7 +1139,7 @@ summary {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1161,16 +1160,16 @@ summary {
   cursor: pointer;
 }
 
-.modal-button-svg {
+.modal__button-svg {
   fill: #000000;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button-svg:hover {
+.modal__button-svg:hover {
   fill: red;
 }
 
-.modal-title {
+.modal__title {
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
@@ -1182,6 +1181,7 @@ summary {
   color: #212121;
 }
 
+/* Forms */
 .modal-form {
   width: 448px;
   height: 342px;
@@ -1191,7 +1191,6 @@ summary {
   padding-bottom: 0px;
 }
 
-/* Forms */
 .modal-form-field {
   position: relative;
   display: -webkit-box;
@@ -1203,12 +1202,7 @@ summary {
           flex-direction: column;
 }
 
-.modal-form-field:not(:last-child) input {
-  margin-bottom: 10px;
-  height: 40px;
-}
-
-.modal-form-input {
+.modal-form-field__input {
   width: 100%;
   margin: 0;
   padding-left: 42px;
@@ -1219,12 +1213,16 @@ summary {
   -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-form-input:focus {
+.modal-form-field__input:focus {
   outline: 1px solid red;
 }
 
-.svg-person {
+.modal-form-field__input:not(:last-child) {
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.modal-form-field__svg {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -1239,11 +1237,11 @@ summary {
 /* .modal-form-input:focus + .svg-person {
   fill: var(--accend-color);
 } */
-.modal-form-field:focus-within > .svg-person {
+.modal-form-field:focus-within > .modal-form-field__svg {
   fill: red;
 }
 
-.modal-form-label {
+.modal-form-field__label {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -1256,7 +1254,7 @@ textarea {
   resize: none;
 }
 
-.modal-textarea {
+.modal-form-field__textarea {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -1265,11 +1263,11 @@ textarea {
   -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-textarea:focus {
+.modal-form-field__textarea:focus {
   outline: 1px solid red;
 }
 
-.modal-form-field > .modal-textarea::-webkit-input-placeholder {
+.modal-form-field > .modal-form-field__textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1277,7 +1275,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-field > .modal-textarea::-moz-placeholder {
+.modal-form-field > .modal-form-field__textarea::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1285,7 +1283,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-field > .modal-textarea:-ms-input-placeholder {
+.modal-form-field > .modal-form-field__textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1293,7 +1291,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-field > .modal-textarea::-ms-input-placeholder {
+.modal-form-field > .modal-form-field__textarea::-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1301,7 +1299,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-field > .modal-textarea::placeholder {
+.modal-form-field > .modal-form-field__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1310,25 +1308,25 @@ textarea {
 }
 
 /* Contract-conditions */
-.checkbox-label {
+.checkbox {
   display: block;
 }
 
-.checkbox {
+.checkbox__input {
   position: absolute;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-.checkbox-icon {
+.checkbox__icon {
   display: inline-block;
   background-image: url(../images/checkbox-black-frame.svg);
   width: 16px;
   height: 15px;
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox__input:checked + .checkbox__icon {
   border: transparent;
   background-color: red;
   background-image: url(../images/checkbox-done-icon.svg);
@@ -1353,11 +1351,11 @@ textarea {
   padding: 0;
 }
 
-.form-contract-conditions {
+.form-contract {
   margin-right: 8.38px;
 }
 
-.text-contract-conditions {
+.contract__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -1365,13 +1363,13 @@ textarea {
   color: #757575;
 }
 
-.contract-conditions-link {
+.contract__link {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: red;
 }
 
-.modal-button-submit {
+.contract__button {
   display: block;
   cursor: pointer;
   width: 200px;
@@ -1394,7 +1392,7 @@ textarea {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button-submit:hover {
+.contract__button:hover {
   background-color: #188ce8;
 }
 
