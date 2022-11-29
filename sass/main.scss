@@ -1,7 +1,8 @@
 
-// Variabilities
+// Variabilities + Nullify 
 
-@import "./utils/variables";
+@import "./utils/vars-portfolio";
+@import "./utils/nyllify";
 
 // Normalise
 
@@ -11,44 +12,82 @@
  
 // Page Header
 
-@import "./components/page-header";
+@import "./components/main-page/main-header/page-header";
+
+// Logo Header 
+
+@import "./components/common/logo-header";
+
+// Header Navigation List
+
+@import "./components/main-page/main-header/header-nav-list";
+
+// Contacts Header
+
+@import "./components/main-page/main-header/contacts-header";
+
 
 // Hero
 
-@import "./components/hero-section.scss";
+// Hero Page
+
+@import "./components/main-page/hero/hero-page";
+
+// Hero Overlay
+
+@import "./components/main-page/hero/ovarlay";
+
+// Hero Title
+
+@import "./components/main-page/hero/hero-title";
+
+// Hero Button
+
+@import "./components/main-page/hero/hero__title-button";
+
 
 // Opportunities
 
-@import "./components/opportunities-section.scss";
+@import "./components/main-page/opportunities-section/opportunities-section";
 
 // What We Do  
 
-@import "./components/wwd-section.scss";
+@import "./components/main-page/wwd-section/wwd-section";
 
 // Team
 
-@import "./components/team-section.scss";
+@import "./components/main-page/team-section/team-section";
 
 // Permanent Clients
 
-@import "./components/permanent-clients-section.scss";
+@import "./components/main-page/permanent-clients-section/permanent-clients-section";
 
 // Footer
 
-@import "./components/footer";
+// Footer Page
+
+@import "./components/main-page/footer/footer-page";
+
+// Logo Footer
+
+@import "./components/common/logo-footer";
+
+// Address Footer
+
+@import "./components/main-page/footer/address-footer";
+
+// Join Block
+
+@import "./components/main-page/footer/join__block";
+
+// Form
+
+@import "./components/main-page/footer/form";
 
 // Backdrop
 
-@import "./components/backdrop";
+@import "./components/main-page/backdrop/backdrop";
 
-         // Portfolio Page
-         
-         // Sections
-    
-// Portfolio Page + Button Section
+// Portfolio Page
 
-@import "./components/portfolio-page-and-button-section";
-
-// Photo Section
-
-@import "./components/portfolio-photo-section";
+@import "./portfolio.scss";
